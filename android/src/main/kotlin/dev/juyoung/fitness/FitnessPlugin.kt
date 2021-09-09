@@ -291,7 +291,6 @@ class FitnessPlugin : FlutterPlugin, ActivityAware, MethodCallHandler, ActivityR
     private fun getFitnessOptions(): FitnessOptions {
         return FitnessOptions.builder()
             .addDataType(DataType.TYPE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
-            .addDataType(DataType.TYPE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_WRITE)
             .build()
     }
 
