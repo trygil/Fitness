@@ -321,8 +321,8 @@ class FitnessPlugin : FlutterPlugin, ActivityAware, MethodCallHandler, ActivityR
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
-        permissions: Array<out String>?,
-        grantResults: IntArray?
+        permissions: Array<out String>,
+        grantResults: IntArray
     ): Boolean {
         return when (requestCode) {
             ACTIVITY_RECOGNITION_REQUEST_CODE -> {
